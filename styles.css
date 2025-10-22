@@ -20,7 +20,8 @@ body {
     background: #444;
     color: white;
     padding: 15px;
-
+    display:flex;
+    justify-content: center;
     gap: 15px;
 }
 .nav a {
@@ -31,6 +32,7 @@ body {
 .main {
     padding: 20px;
     gap: 20px;
+    display:flex;
 }
 .sidebar {
     background: #f4f4f4;
@@ -41,21 +43,29 @@ body {
     background: #ddd;
     padding: 20px;
     gap: 20px;
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 .section {
     background: white;
     padding: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
 }
 .card-container {
     gap: 15px;
     width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    
 }
 .card {
     background: white;
     padding: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width:32.2%;
 }
 .footer {
     margin-top: 20px;
